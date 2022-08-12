@@ -7,6 +7,8 @@ import {
   Route,
 } from "react-router-dom";
 import About from './components/About';
+import Projects from './components/Projects';
+import ContactUs from './components/ContactUs'
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 
@@ -16,6 +18,9 @@ root.render(
   <Routes>
     <Route path="/" element={<App />} />
     <Route path="About" element={<About />} />
+    <Route path="Projects" element={<Projects />} />
+    <Route path="ContactUs" element={<ContactUs />} />
+
   </Routes>
 </BrowserRouter>
 );

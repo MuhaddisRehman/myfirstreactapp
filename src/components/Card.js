@@ -1,11 +1,7 @@
 import Cards from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
-import team1 from '../Assets/aboutImages/team1.jpg';
-import team2 from '../Assets/aboutImages/team2.jpg';
-import team3 from '../Assets/aboutImages/team3.jpg';
-import team4 from '../Assets/aboutImages/team4.jpg';
-
+import './Card.css';
 
 import React from 'react'
 
@@ -24,5 +20,12 @@ export default function Card(props) {
   )
 }
 Card.defaultProps ={
-    title: 'Set name here'
+    title: 'Set name here',
+    description: 'Set desciption here',
+    Img: {}
+}
+Card.props={
+    title: PropTypes.string.isRequired,
+    Img: PropTypes.object.isRequired,
+    description: PropTypes.string.isRequired
 }

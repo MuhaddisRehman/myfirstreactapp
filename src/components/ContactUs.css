@@ -1,0 +1,9 @@
+.contactBtn{
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    padding: 1vh 8%;
+}
+.contactBtn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
